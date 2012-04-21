@@ -1,0 +1,25 @@
+v2.2 September 16, 2011
+    * Issue 10: Copyright and license adds
+    * Issue 11: use only lowercase characters for package names
+    * Fix of security flaw - insecure system command call
+v2.1 July 5, 2010 
+    * Issue 6: Include ChangeLog and COPYING files in tar.gz
+v2.0 July 4, 2010 
+    * Issue 1: Incorrect License: Code says GPL-2, Google page says GPL-3
+    * Issue 3: Chnaging background color has no effect
+    * Issue 4: ru.po is missing from source package
+    * Thanks for issues to Jari Aalto
+
+v2.0 Beta - December 10, 2007
+    * Config files are moved to ~/.config/oboinus
+    * Added support of background color via Python Image Library (so you need to install it)
+    * For users who have notebooks with non-standart resolution (e.g 1240x800). Now you can 
+choose how image must be scaled vertically or horizontally
+    * Some UI changes 
+    * In subversion version added internationalization (i18n) and russian translation.
+
+v1.2 - 14 November, 2007 
+    * Fix bugs with random image restore and checkbox. Add "Escape" shortcut for exiting app. 
+
+v1.0 - August 23, 2007
+    * Added random image feature. When "Restore random image" is checked random image from directory of current will be restored
