@@ -29,7 +29,7 @@ app = App()
 if sys.argv.count("--restore") or sys.argv.count("-r"):
     try:
         app.restore()
-    except e:
+    except Exception, e:
         print e.msg
         sys.exit(1)
 elif sys.argv.count("-h") or sys.argv.count("--help"):
