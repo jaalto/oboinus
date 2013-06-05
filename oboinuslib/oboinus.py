@@ -57,7 +57,12 @@ gettext.install(APP, LOCALE_DIR, unicode=True)
 PAGGING = 5
 SPACING = 10
 CUR_BG_SETTER = 'feh'
-CONFIG_DIR  = os.path.expanduser('~/.oboinus/')
+
+CONFIG_DIR = os.getenv("XDG_CONFIG_HOME")
+if not CONFIG_DIR:
+    CONFIG_DIR = os.getenv("HOME") + "/.config"
+CONFIG_DIR = CONFIG_DIR + "/oboinus/"
+
 CONFIG_FILE = 'oboinusrc'
 BG_FILE     = 'bg_image'
 
@@ -108,10 +113,11 @@ class OboinusConfig():
         self.config = ConfigParser()
 
     def load(self):
-        self.config.read(self.get_config_path(create_dir=True))
+        if not self.config.read(self.get_config_path(create_dir=True)):
+            raise Exception("Can't find config file")
+
         if not self.config.has_section(self.section):
             raise NoSectionError()
-
         try:
             filename = self.config.get(self.section, 'filename')
         except:
