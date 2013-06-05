@@ -21,6 +21,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 '''
 import sys
 import os
+import os.path
 import random
 import gettext
 import traceback
@@ -111,6 +112,14 @@ class OboinusConfig():
         if not self.config.has_section(self.section):
             raise NoSectionError()
 
+        try:
+            filename = self.config.get(self.section, 'filename')
+        except:
+            filename = ''
+
+        if not os.path.exists(filename):
+            raise Exception("Can't read image file")
+        
     def get(self, key):
         if (key == 'random_image'):
             return self.config.getboolean(self.section, key)
@@ -230,8 +239,10 @@ class App:
         self.config = OboinusConfig()
         try:
             self.config.load()
+        except Exception, e:
+            print "Warning: ", e.message
         except:
-            print "Can't load config file"
+            print "Warning: Can't load config file"
         else:
             self.filename = self.config.get('filename')
             self.mode = self.config.get('mode')
