@@ -32,7 +32,7 @@ from . import __version__, __author__, __license__, __email__, __website__
 
 def quit(msg, emergency=True):
     '''Simple wrapper for exit function with message.'''
-    sys.stderr.write(msg)
+    sys.stderr.write(msg + '\n')
     sys.exit(1)
 
 try:
@@ -58,9 +58,13 @@ PAGGING = 5
 SPACING = 10
 CUR_BG_SETTER = 'feh'
 
-CONFIG_DIR = os.getenv("XDG_CONFIG_HOME")
-if not CONFIG_DIR:
+if os.getenv("XDG_CONFIG_HOME"):
+    CONFIG_DIR = os.getenv("XDG_CONFIG_HOME")
+elif os.getenv("HOME"):
     CONFIG_DIR = os.getenv("HOME") + "/.config"
+else:
+    quit("XDG_CONFIG_HOME or HOME environment variable couldn't be found.")
+
 CONFIG_DIR = CONFIG_DIR + "/oboinus/"
 
 CONFIG_FILE = 'oboinusrc'
