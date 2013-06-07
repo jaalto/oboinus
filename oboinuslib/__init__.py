@@ -20,7 +20,7 @@ along with Oboinus; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 __author__  = "Suniobo"
-__version__ = "2.2"
+__version__ = "2.3"
 __email__   = "suniobo@fastmail.fm"
 __website__ = 'https://github.com/suniobo/oboinus'
 __license__ = """
