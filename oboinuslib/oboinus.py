@@ -113,8 +113,9 @@ class OboinusConfig():
         self.config = ConfigParser()
 
     def load(self):
-        if not self.config.read(self.get_config_path(create_dir=True)):
-            raise Exception("Can't find config file")
+        config_path = self.get_config_path(create_dir=True)
+        if not self.config.read(config_path):
+            raise Exception("Can't find config file '%s'" % config_path)
 
         if not self.config.has_section(self.section):
             raise NoSectionError()
@@ -124,7 +125,7 @@ class OboinusConfig():
             filename = ''
 
         if not os.path.exists(filename):
-            raise Exception("Can't read image file")
+            raise Exception("Can't read image file '%s'" % filename)
         
     def get(self, key):
         if (key == 'random_image'):
