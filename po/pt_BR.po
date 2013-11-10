@@ -1,0 +1,104 @@
+# Brazilian Portuguese translations for oboinus package
+# Copyright (C) 2007 THE oboinus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the oboinus package.
+# Suniobo <suniobo@fastmail.fm>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: oboinus VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-08 09:29-0300\n"
+"PO-Revision-Date: 2013-11-08 09:36-0300\n"
+"Last-Translator: Lara Maia <lara@craft.net.br>\n"
+"Language-Team: Brazilian Portuguese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: oboinuslib/oboinus.py:372
+msgid "About Oboinus"
+msgstr "Sobre o Oboinus"
+
+#: oboinuslib/oboinus.py:329
+msgid "Auto"
+msgstr "Auto"
+
+#: oboinuslib/oboinus.py:300
+msgid "Background color"
+msgstr "Cor de fundo"
+
+#: oboinuslib/oboinus.py:332
+msgid "Center"
+msgstr "Centro"
+
+#: oboinuslib/oboinus.py:392
+msgid "Developer: "
+msgstr "Desenvolvedor: "
+
+#: oboinuslib/oboinus.py:331
+msgid "Horizontal scaled"
+msgstr "Escalado horizontalmente"
+
+#: oboinuslib/oboinus.py:414
+msgid "Images"
+msgstr "Imagens"
+
+#: oboinuslib/oboinus.py:271 oboinuslib/oboinus.py:390
+msgid "Oboinus"
+msgstr "Oboinus"
+
+#: oboinuslib/oboinus.py:370
+msgid "Open file"
+msgstr "Abrir arquivo"
+
+#: oboinuslib/oboinus.py:393
+msgid "Package maintainer: "
+msgstr "Mantenedor do pacote: "
+
+#: oboinuslib/oboinus.py:371
+msgid "Quit Oboinus"
+msgstr "Sair do Oboinus"
+
+#: oboinuslib/oboinus.py:333
+msgid "Solid Color"
+msgstr "Cor Sólida"
+
+#: oboinuslib/oboinus.py:330
+msgid "Vertical scaled"
+msgstr "Escalado verticalmente"
+
+#: oboinuslib/oboinus.py:372
+msgid "_About"
+msgstr "_Sobre"
+
+#: oboinuslib/oboinus.py:312
+msgid "_Apply"
+msgstr "_Aplicar"
+
+#: oboinuslib/oboinus.py:316
+msgid "_Browse"
+msgstr "_Navegar"
+
+#: oboinuslib/oboinus.py:367
+msgid "_File"
+msgstr "_Arquivo"
+
+#: oboinuslib/oboinus.py:368
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: oboinuslib/oboinus.py:370
+msgid "_Open"
+msgstr "_Abrir"
+
+#: oboinuslib/oboinus.py:369
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: oboinuslib/oboinus.py:371
+msgid "_Quit"
+msgstr "_Sair"
+
+#: oboinuslib/oboinus.py:375
+msgid "_Restore random image"
+msgstr "_Restaurar imagem aleatória"

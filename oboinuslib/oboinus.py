@@ -36,7 +36,7 @@ def quit(msg, emergency=True):
     sys.exit(1)
 
 try:
-    import Image
+    from PIL import Image
 except ImportError, (strerror):
     quit('Module %s is requred by Oboinus' % strerror)
 
@@ -51,7 +51,7 @@ if gtk.pygtk_version < (2, 6, 0):
 
 # i18n 
 APP = 'oboinus'
-LOCALE_DIR = 'locale'
+LOCALE_DIR = '/usr/share/locale'
 gettext.install(APP, LOCALE_DIR, unicode=True)
 
 PAGGING = 5

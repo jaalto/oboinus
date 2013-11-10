@@ -54,5 +54,6 @@ setup(name='oboinus',
       data_files=[
             ('share/man/man1', ['oboinus.1']),
             ('share/locale/ru/LC_MESSAGES', ['mo/ru/oboinus.mo']),
+            ('share/locale/pt_BR/LC_MESSAGES', ['mo/pt_BR/oboinus.mo']),
             ]
      )
