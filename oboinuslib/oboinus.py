@@ -36,7 +36,7 @@ def quit(msg, emergency=True):
     sys.exit(1)
 
 try:
-    import Image
+    from PIL import Image
 except ImportError, (strerror):
     quit('Module %s is requred by Oboinus' % strerror)
 
